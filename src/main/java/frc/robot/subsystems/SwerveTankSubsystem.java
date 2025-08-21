@@ -9,9 +9,9 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class SwerveTankSubsystem extends SubsystemBase {
     private final SparkMax flDrive = new SparkMax(1, MotorType.kBrushless);
-    private final SparkMax frDrive = new SparkMax(2, MotorType.kBrushless);
-    private final SparkMax blDrive = new SparkMax(3, MotorType.kBrushless);
-    private final SparkMax brDrive = new SparkMax(4, MotorType.kBrushless);
+    private final SparkMax frDrive = new SparkMax(3, MotorType.kBrushless);
+    private final SparkMax blDrive = new SparkMax(7, MotorType.kBrushless);
+    private final SparkMax brDrive = new SparkMax(6, MotorType.kBrushless);
 
     public SwerveTankSubsystem() {
         SparkMaxConfig config = new SparkMaxConfig();
