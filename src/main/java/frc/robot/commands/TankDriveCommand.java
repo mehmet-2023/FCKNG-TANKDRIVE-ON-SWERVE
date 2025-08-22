@@ -17,8 +17,10 @@ public class TankDriveCommand extends Command {
     @Override
     public void execute() {
         double left = -controller.getLeftY()*0.5;
-        double right = -controller.getRightY()*0.5;
-
+        double right = 
+        
+        controller.getRightY()*0.5;
+        System.out.println(controller.getLeftY());
         // deadband
         if (Math.abs(left) < 0.1) left = 0;
         if (Math.abs(right) < 0.1) right = 0;
